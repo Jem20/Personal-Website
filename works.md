@@ -8,5 +8,3 @@ description: I'm a bird photographer and gamer.
 
 A gallery of my best bird photos.
 
-## Projects
-
