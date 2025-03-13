@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:site_name" content="jembirdphotography" />
+  <meta property="og:title" content="{{ page.title }}" />
+  <meta property="og:description" content="{{ page.description }}" />
+  <meta property="og:image" content="/assets/images/other/icon.png" />
+
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
+    <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  {% include head-custom.html %}
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <section>
+      <div id="title">
+        <a href="../"><h1>Jem</h1></a>
+        <p>I'm a bird photographer and gamer.</p>
+        <p>
+          <a href="../">Home</a> |
+          <a href="../works"><b>Works</b></a> |
+          <a href="../blogs">Blogs</a> |
+        </p>
+        <hr class="header">
+      </div>
+
+      {{ content }}
+      
+    </section>
+    <hr class="footer">
+
+  </div>
+
+<footer id="footer">
+    <div style="text-align:center">
+      <div style="display: flex; justify-content: center; gap: 15px;">
+        <div>
+          <p>
+            <strong>Follow me on social media:</strong>
+            <br>
+            <a href="https://www.instagram.com/nightkingale/">Instagram</a> |
+            <a href="https://www.reddit.com/user/Nightkingale">Reddit</a> |
+            <a href="https://www.twitch.tv/nightkingale/">Twitch</a>
+            <br>
+            <a href="https://twitter.com/Nightkingale">Twitter</a> |
+            <a href="https://www.youtube.com/@Nightkingale">YouTube</a>
+            <br>
+          </p>
+        </div>
+      </div>
+      <p style="line-height: 0px; margin-top: 5px;">
+      </p>
+      </p>
+      <p style="line-height: 0px;">
+        <small>© Jem 2025</small>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
