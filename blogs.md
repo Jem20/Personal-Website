@@ -1,6 +1,6 @@
 ---
-layout: posts
-title: Posts Section
+layout: blogs
+title: Blogs Section
 description: I'm a bird photographer and gamer.
 ---
 
