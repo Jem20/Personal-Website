@@ -1,141 +1,111 @@
 <!doctype html>
-<html lang="{{ site.lang | default: " en-US" }}">
+    <html lang="{{ site.lang | default: " en-US" }}">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta property="og:site_name" content="jembirdphotography" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{{ page.description }}" />
-  <meta property="og:image" content="/assets/images/other/icon.png" />
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta property="og:site_name" content="jembirdphotography" />
+      <meta property="og:title" content="{{ page.title }}" />
+      <meta property="og:description" content="{{ page.description }}" />
+      <meta property="og:image" content="/assets/images/other/icon.png" />
 
-  {% seo %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
-  <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  <!--[if lt IE 8]>
-    <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
-    <![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  {% include head-custom.html %}
-  <style>
-      .banner {
-        background-color: #141414;
-        color: #ffffff;
-        text-align: center;
-        padding: 20px;
-        font-size: 18px;
-        padding-bottom: 0px; /* Add this line to adjust the padding on the bottom */
-      }
-      .banner a {
-        font-weight: bold;
-      }
-    </style>
-</head>
+      {% seo %}
+      <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+      <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
+      <!--[if lt IE 9]>
+          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+      <!--[if lt IE 8]>
+        <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
+        <![endif]-->
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      {% include head-custom.html %}
+      <style>
+        #title {
+          background-image: url('./banner.JPG');
+          background-size: cover;
+          background-position: center;
+          color: #ffffff;
+          padding: 20px;
+          text-align: center;
+        }
 
-<body>
-  <div class="wrapper">
+        .social-media-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
 
-    <section>
-      <div id="title">
-        <a href="../"><h1>Jem</h1></a>
-        <p>I'm a bird photographer and gamer.</p>
-        <p>
-          <a href="../"><b>Home</b></a> |
-          <a href="../works">Works</a> |
-          <a href="../blogs">Blogs</a> |
-        </p>
-        <hr class="header">
+        .social-icons {
+          display: flex;
+          gap: 15px;
+        }
+      </style>
+    </head>
+
+    <body>
+      <div class="wrapper">
+        <section>
+          <div id="title">
+            <a href="../">
+              <h1>Jem</h1>
+            </a>
+            <p>I'm a bird photographer and gamer.</p>
+            <p>
+              <a href="../"><b>Home</b></a> |
+              <a href="../works">Works</a> |
+              <a href="../blogs">Blogs</a> |
+            </p>
+            <hr class="header">
+          </div>
+
+          {{ content }}
+
+        </section>
+        <hr class="footer">
+
       </div>
 
-      {{ content }}
-      
-    </section>
-    <hr class="footer">
-
-  </div>
-
-  <footer id="footer">
-    <div style="text-align:center">
-      <div style="display: flex; justify-content: center; gap: 15px;">
-        <div>
-          <p>
-            <strong>Follow me on social media:</strong>
-            <p style="line-height:1px;">
-            <br>
-            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-            <style>
-              .social-icon {
-                color: #ffffff;
-                font-size: 2rem;
-                transition: color 0.2s;
-                text-decoration: none;
-                margin: 0 5px;
-              }
-            </style>
-            <style>
-              .social-icon2 {
-                color: #ffffff;
-                font-size: 2rem;
-                transition: color 0.2s;
-                text-decoration: none;
-                margin: 0 5px;
-              }
-            </style>
-            <style>
-              .social-icon3 {
-                color: #ffffff;
-                font-size: 2rem;
-                transition: color 0.2s;
-                text-decoration: none;
-                margin: 0 5px;
-              }
-            </style>
-            <style>
-              .social-icon4 {
-                color: #ffffff;
-                font-size: 2rem;
-                transition: color 0.2s;
-                text-decoration: none;
-                margin: 0 5px;
-              }
-            </style>
-            <style>
-              .social-icon5 {
-                color: #ffffff;
-                font-size: 2rem;
-                transition: color 0.2s;
-                text-decoration: none;
-                margin: 0 5px;
-              }
-            </style>
-            <a class="social-icon" href="https://discord.com/users/801868147941441607" target="_blank">
-              <ion-icon name="logo-discord"></ion-icon>
-            </a>
-            <a class="social-icon2" href="https://www.instagram.com/jem_birdphotography" target="_blank">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a class="social-icon3" href="https://www.reddit.com/user/jemthebirder" target="_blank">
-              <ion-icon name="logo-reddit"></ion-icon>
-            </a>
-            <a class="social-icon4" href="https://twitter.com/jemthebread" target="_blank">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-            <a class="social-icon5" href="https://youtube.com/@Jem7" target="_blank">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
+      <footer id="footer">
+        <div style="text-align:center">
+          <div class="social-media-container">
+            <p>
+              <strong>Follow me on social media:</strong>
             </p>
-            <p style="line-height:1px;">
-            <small>© Jem 2025</small>
+            <div class="social-icons">
+              <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+              <style>
+                .social-icon {
+                  color: #ffffff;
+                  font-size: 2rem;
+                  transition: color 0.2s;
+                  text-decoration: none;
+                }
+              </style>
+              <a class="social-icon" href="https://discord.com/users/801868147941441607" target="_blank">
+                <ion-icon name="logo-discord"></ion-icon>
+              </a>
+              <a class="social-icon" href="https://www.instagram.com/jem_birdphotography" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a class="social-icon" href="https://www.reddit.com/user/jemthebirder" target="_blank">
+                <ion-icon name="logo-reddit"></ion-icon>
+              </a>
+              <a class="social-icon" href="https://twitter.com/jemthebread" target="_blank">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a class="social-icon" href="https://youtube.com/@Jem7" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </div>
+            <p>
+              <small>© Jem 2025</small>
             </p>
-          <br>
-  </div>
-</footer>
-</body>
+          </div>
+      </footer>
+    </body>
 
-</html>
+    </html>
